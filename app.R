@@ -7,6 +7,8 @@ library(bslib)
 library(shinycssloaders)
 library(shinyjs)
 
+print("hello")
+
 sys_info <- Sys.info()
 if (sys_info[["sysname"]] == "Darwin") {
   system("docker container start sleepy_bhabha")
