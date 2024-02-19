@@ -11,7 +11,7 @@ sys_info <- Sys.info()
 if (sys_info[["sysname"]] == "Darwin") {
   system("docker container start sleepy_bhabha")
 } else if (sys_info[["sysname"]] == "Linux") {
-  system("sudo docker container start frosty_hermann")
+  system("docker container start frosty_hermann")
 }
 # system("docker run -d -p 4445:4444 -p 5900:5900 selenium/standalone-firefox-debug")
 
